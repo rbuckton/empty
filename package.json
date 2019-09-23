@@ -1,0 +1,22 @@
+{
+  "name": "docfx-scratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "build-sources": "tsc -b .",
+    "extract-api": "api-extractor run --local",
+    "document-api": "api-documenter yaml -i obj/api -o obj/yml",
+    "docfx": "docfx",
+    "build": "npm run build-sources & npm run extract-api & npm run document-api & npm run docfx"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@microsoft/api-documenter": "file:../web-build-tools/apps/api-documenter",
+    "@microsoft/api-extractor": "^7.4.2",
+    "typescript": "^3.6.3"
+  }
+}

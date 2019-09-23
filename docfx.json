@@ -1,0 +1,13 @@
+{
+  "build": {
+    "template": ["default", "template"],
+    "content": [
+      { "files": ["**/*.yml", "**/*.md"], "src": "obj/yml", "dest": "api" }
+    ],
+    "exportRawModel": true,
+    "rawModelOutputFolder": "obj/raw",
+    "exportViewModel": true,
+    "viewModelOutputFolder": "obj/view",
+    "dest": "docs"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "mainEntryPointFilePath": "<projectFolder>/dist/index.d.ts",
+    "compiler": {},
+    "apiReport": {
+        "enabled": false
+    },
+    "dtsRollup": {
+        "enabled": false
+    },
+    "tsdocMetadata": {
+        "enabled": false
+    },
+    "docModel": {
+        "enabled": true,
+        "apiJsonFilePath": "<projectFolder>/obj/api/<unscopedPackageName>.api.json"
+    },
+    "messages": {
+        "extractorMessageReporting": {
+            "ae-missing-release-tag": {
+                "logLevel": "none"
+            }
+        },
+        "tsdocMessageReporting": {
+            "tsdoc-param-tag-missing-hyphen": {
+                "logLevel": "none"
+            }
+        }
+    }
+}
